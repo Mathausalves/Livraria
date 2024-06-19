@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trio Mocotó Livraria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <img src="LOGO.png" alt="Logo da Livraria" class="logo">
+            <h1 class="livraria-nome">Trio Mocotó Livraria</h1>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">Cadastrar Novo Livro</div>
+            <div class="card-body">
+                <form id="form-cadastrar">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="titulo" placeholder="Título" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="autor" placeholder="Autor" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <input type="number" class="form-control" id="ano" placeholder="Ano" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="number" class="form-control" id="preco" placeholder="Preço" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="number" class="form-control" id="exemplares" placeholder="Exemplares" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Lista de Livros</div>
+            <div class="card-body">
+                <table class="table table-striped" id="livros-tabela">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Ano</th>
+                            <th>Preço</th>
+                            <th>Exemplares</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
